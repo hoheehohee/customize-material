@@ -2,7 +2,7 @@
   "extends": "eslint-config-zlatjs2",
   "settings": {
     "import/resolver": {
-      "node": { "paths": [path.resolve("./src")] }
+      "node": { "paths": "./src" }
     }
   }
 }
