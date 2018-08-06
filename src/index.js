@@ -1,15 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import './assets/style/index.scss';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+// Common
+export { default as Icon } from './commons/Icon';
+export { default as Image } from './commons/Image';
+export { default as SlideDrawer } from './commons/SlideDrawer';
+export { default as SubHeading } from './commons/SubHeading';
 
-ReactDOM.render(
-  <React.Fragment>
-    <CssBaseline />
-    <App />
-  </React.Fragment>,
-  document.getElementById('root')
-);
-registerServiceWorker();
+// Collection
+export { default as MenuList } from './collections/MenuList';
+
+// Layout
+export { default as Wrapper } from './layouts/Wrapper';
+export { default as Header } from './layouts/Header';
+export { default as Navigation } from './layouts/Navigation';
+
