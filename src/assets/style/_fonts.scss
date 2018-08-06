@@ -1,0 +1,50 @@
+@import 'mixin';
+
+@font-face {
+  font-family: 'vendys';
+  src: url('fonts/vendys.eot?zet3fj');
+  src: url('fonts/vendys.eot?zet3fj#iefix') format('embedded-opentype'),
+    url('fonts/vendys.ttf?zet3fj') format('truetype'),
+    url('fonts/vendys.woff?zet3fj') format('woff'),
+    url('fonts/vendys.svg?zet3fj#vendys') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 아이콘 폰트 기본 스타일
+.icon {
+  font-family: 'vendys' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include block('logo') {
+    &::before {
+      content: "\e900"; 
+    }
+  }
+  @include block('hamburger') {
+    &::before {
+      content: "\e900"; 
+    }
+  }
+  @include block('profile') {
+    &::before {
+      content: "\e901";
+    }
+  }
+
+  /* size */
+  &.sm { font-size: 16px; }
+  &.md { font-size: 32px; }
+  &.lg { font-size: 48px; }
+
+  /* color */
+  &.black { color: #000 }
+  &.white { color: #fff }
+}
